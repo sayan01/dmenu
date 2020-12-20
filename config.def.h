@@ -9,19 +9,19 @@ static const char *fonts[] = {
 	"Noto Color Emoji:size=16",
 	"fontawesome:size=16",
 };
-static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
+static const char *prompt   = NULL;      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
-	/*     fg         bg       */
-	[SchemeNorm] = { "#ffffff", "#263238" },
-	[SchemeSel] = { "#eeeeee", "#0d47a1" },
-	[SchemeSelHighlight] = { "#e91e63", "#0d47a1" },
+	                       /*     fg         bg       */
+	[SchemeNorm] =          { "#ffffff", "#263238" },
+	[SchemeSel] =           { "#eeeeee", "#21c353" },
+	[SchemeSelHighlight] =  { "#e91e63", "#0d47a1" },
 	[SchemeNormHighlight] = { "#ffc978", "#263238" },
-	[SchemeOut] = { "#000000", "#00ffff" },
+	[SchemeOut] =           { "#000000", "#00ffff" },
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 static unsigned int lines      = 20;
 /* -h option; minimum height of a menu line */
-static unsigned int lineheight = 0;
+static unsigned int lineheight = 16;
 static unsigned int min_lineheight = 16;
 
 /*
@@ -31,4 +31,4 @@ static unsigned int min_lineheight = 16;
 static const char worddelimiters[] = " ";
 
 /* Size of the window border */
-static const unsigned int border_width = 10;
+static const unsigned int border_width = 5;
